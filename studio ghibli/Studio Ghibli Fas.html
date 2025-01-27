@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli fãs</title>
+    <link rel="stylesheet" href="Fans.css">
+</head>
+<body> 
+    <header id="header">
+        <div class="container">
+
+            <a href="home.html" class="logo-header">
+                <div class="container-logo">
+                    <img src="https://media.tenor.com/Bs2YHu5ncLYAAAAM/totoro-anime.gif" alt="totoro andando" class="logo">
+            
+                    <h1>スタジオジブリ作品<Br> STUDIO GHIBLI</h1> 
+                </div><!--container-logo--> 
+            </a>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Tela inicial</a></li>
+                        <li><a href="Jogos.html">Jogos</a></li>
+                        <li><a href="Filmes.html">Filmes</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <form id="searchForm" action="search.html" method="get">
+                    <div class="barra-pesquisa">
+                        <input type="text" id="searchInput" name="query" placeholder="Pesquisar..." required>
+                        <button type="submit"><img src="./icones/totoro.svg" alt=""></button>
+                    </div>
+                </form>
+            </div>    
+
+        </div> <!--container-->
+    </header> 
+
+    <main>
+        
+        <section class="container">
+            <div class="wrapper">
+                <img src="imagens/Studio Ghibli Cat.png" name="Emily Larissa" id="mainPhoto" alt="Desenho_gatinho">
+                <div class="caption-wrapper">
+                    <div id="caption">Emily Larissa</div>
+                </div>
+            </div>
+
+            <div>
+                <img class="imgCarousel" src="imagens/Studio Ghibli Cat.png" alt="Desenho_gatinho" name="Emily Larissa">
+                <img class="imgCarousel" src="imagens/myri desenho.jfif" alt="Desenho_Casteloanimado" name="Myrielly Layanny">
+                <img class="imgCarousel" src="imagens/desenho sofy.jfif" alt="Desenho_totoro" name="Sofia Gabrielly">
+                <img class="imgCarousel" src="imagens/erick desenho.jfif" alt="Desenho_totoro2" name="Erick Adriel">
+                <img class="imgCarousel" src="imagens/prima desenho.jfif" alt="Desenho_chihiro" name="Ana Catarina">
+                <img class="imgCarousel" src="imagens/WhatsApp Image 2024-10-31 at 20.45.06.jpeg" alt="Desenho_castelo" name="Flávia Gabrielle">
+                <img class="imgCarousel" src="Imagens/Joaao.jpeg" alt="viagem_de_chihiro" name="João Victor">
+            </div>
+        </section>
+        <script src="galeriafans.js"></script>
+    </main>
+    
+
+    <script src="Fans.js" defer></script>
+
+</body>
+
+<footer> 
+    <h3>Quer enviar algum desenho?</h3>
+
+    <p>Preencha abaixo.</p>
+
+    <form class="sessao" action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return handleSubmit(event)">
+        <div class="formulario">
+            <label>Nome: <input type="text" name="nome"></label>
+        </div>     
+        <div class="formulario">
+            <label>Desenho: <input type="file" name="image"></label> 
+        </div>
+       <div class="formulario">
+            <input type="submit" value="Enviar">
+            
+        </div>
+    </form>    
+
+    <p>&copy;2024 Todos os direitos reservados</p>
+</footer>
+
+</html>
