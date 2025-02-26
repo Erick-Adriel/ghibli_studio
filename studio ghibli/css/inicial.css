@@ -144,7 +144,7 @@ body {
 main.seção-bio {
   height: 120vh;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
-    url("Imagens/hayao_miyazaki1.jpg") no-repeat center center/cover;
+    url("./Imagens/hayao_miyazaki1.jpg") no-repeat center center/cover;
   position: relative;
   display: block;
   align-items: flex-start;
