@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: floralwhite;
+}
+
+/*HEADER*/
+.container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 18px 4%;
+  background-color: #0d1117;
+  margin: 0;
+  top: 0;
+  color: floralwhite;
+  position: fixed;
+}
+
+/*BARRA DE PESQUISA*/
+
+.barra-pesquisa {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.barra-pesquisa input {
+  padding: 10px 40px 10px 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  width: 150px;
+}
+
+.barra-pesquisa button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.barra-pesquisa button img {
+  width: 30px;
+  height: 30px;
+}
+
+/*LOGO HOME*/
+
+.container a {
+  text-decoration: none;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 5px;
+}
+
+h1 {
+  color: floralwhite;
+  font-size: 1rem;
+}
+
+/*LISTA*/
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: floralwhite;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 30px;
+  transition: transform 0.2s ease, border-bottom 0.2s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid;
+}
+
+/*SLIDES FOTOS*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 10%;
+  margin: 0;
+}
+
+#mainPhoto {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+#mainPhoto.show {
+  opacity: 1;
+}
+
+.imgCarousel {
+  width: 100px;
+  height: 86px;
+  object-fit: cover;
+  margin: 0 5px;
+  border: 0;
+  transition: 0.3s;
+  display: block;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgCarousel:hover {
+  width: 110px;
+  height: 110px;
+  border: 3px solid #222;
+  margin: 3px;
+}
+
+.wrapper {
+  position: relative;
+  z-index: -150;
+  text-align: center;
+}
+
+.caption-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: #0d1117;
+  color: floralwhite;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 0 0 5px 5px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.caption-wrapper.show {
+  opacity: 1;
+}
+
+.caption-wrapper #caption {
+  margin: 0;
+  font-size: 20px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #0d1117;
+  color: floralwhite;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 8px 0;
+  color: #b0b0b0;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: floralwhite;
+}
+
+footer .sessao {
+  margin: 20px auto;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #161b22;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer .formulario {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+footer label {
+  display: block;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+footer input[type="text"],
+footer input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+footer input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #160ca1;
+  color: floralwhite;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+footer input[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo-header {
+    display: none;
+  }
+
+  nav a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container nav ul a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container nav {
+    padding: 0 0 1rem 0;
+  }
+}

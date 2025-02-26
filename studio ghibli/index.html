@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Filmes.html">
-    <link rel="stylesheet" href="Jogos.html">
-    <link rel="stylesheet" href="Studio Ghibli Fas.html">
-    <link rel="stylesheet" href="inicial.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Filmes.html" />
+    <link rel="stylesheet" href="Jogos.html" />
+    <link rel="stylesheet" href="Studio Ghibli Fas.html" />
+    <link rel="stylesheet" href="./css/inicial.css" />
     <title>Studio Ghibli</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div class="container">
+      <div class="container">
+        <div>
+          <nav>
+            <ul>
+              <li><a href="Filmes.html">Filmes</a></li>
+              <li><a href="Jogos.html">Jogos</a></li>
+              <li><a href="Studio Ghibli Fas.html">Ghibli Fãs</a></li>
+            </ul>
+          </nav>
+        </div>
 
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="Filmes.html">Filmes</a></li>
-                        <li><a href="Jogos.html">Jogos</a></li>
-                        <li><a href="Studio Ghibli Fas.html">Ghibli Fãs</a></li>
-                    </ul>
-                </nav>
+        <div>
+          <form id="searchForm" action="Filmes.html" method="get">
+            <div class="barra-pesquisa">
+              <input
+                type="text"
+                id="searchInput"
+                name="query"
+                placeholder="Pesquisar..."
+                required
+              />
+              <button type="submit">
+                <img src="./icones/totoro.svg" alt="" />
+              </button>
             </div>
+          </form>
+        </div>
+      </div>
+      <!--container-->
+    </header>
 
-            <div>
-                <form id="searchForm" action="Filmes.html" method="get">
-                    <div class="barra-pesquisa">
-                        <input type="text" id="searchInput" name="query" placeholder="Pesquisar..." required>
-                        <button type="submit"><img src="./icones/totoro.svg" alt=""></button>
-                    </div>
-                </form>
-            </div>    
+    <main>
+      <div class="container-logo">
+        <h1>
+          スタジオジブリ作品<br />
+          STUDIO GHIBLI
+        </h1>
+      </div>
+      <!--container-logo-->
+    </main>
 
-        </div> <!--container-->
-    </header> 
+    <main class="seção-bio">
+      <div class="bio">
+        <div class="txt-bio">
+          <h1>Hayao Miyazaki</h1>
+          <p>
+            Nascido em Tokyo em meio a segunda guerra mundial, Hayao Miyazaki em
+            sua infância se mudou muito fugindo de bombardeios de inimigos no
+            Japão, ele começou a se interessar por animação ainda na escola, de
+            início ele apenas conseguia desenhar objetos familiares, possuía
+            dificuldade de desenhar pessoas mas com tempo de estudo ele não só
+            aprendeu a desenhar mas também aprendeu que os movimentos são
+            levados pela alma.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 
-<main>
-    <div class="container-logo">
-        <h1>スタジオジブリ作品<Br> STUDIO GHIBLI</h1>    
-    </div><!--container-logo-->
-</main>   
+  <footer>
+    <p>&copy;2024 Todos os direitos reservados</p>
+  </footer>
 
-<main class="seção-bio">
-    <div class="bio"> 
-        <div class="txt-bio"> 
-            <h1> Hayao Miyazaki</h1>
-            <p> Nascido em Tokyo em meio a segunda guerra mundial, Hayao Miyazaki em sua infância se mudou muito fugindo de bombardeios de inimigos no Japão, ele começou a se interessar por animação ainda na escola, de início ele apenas conseguia desenhar objetos familiares, possuía dificuldade de desenhar pessoas mas com tempo de estudo ele não só aprendeu a desenhar mas também aprendeu que os movimentos são levados pela alma. </p>
-        </div> 
-    </div>
-</main>
-</body>
-
-    <footer> 
-        <p>&copy;2024 Todos os direitos reservados</p>
-    </footer>
-
-    <script src="Home.js"></script>
+  <script src="./js/Home.js"></script>
 </html>

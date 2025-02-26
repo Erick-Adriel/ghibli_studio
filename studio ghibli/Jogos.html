@@ -1,83 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Ghibli Jogos </title>
-    <link rel="stylesheet" href="jogos.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Ghibli Jogos</title>
+    <link rel="stylesheet" href="./css/jogos.css" />
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div class="container">
+      <div class="container">
+        <a href="index.html" class="logo-header">
+          <div class="container-logo">
+            <img
+              src="https://media.tenor.com/Bs2YHu5ncLYAAAAM/totoro-anime.gif"
+              alt="totoro andando"
+              class="logo"
+            />
 
-            <a href="home.html" class="logo-header">
-                <div class="container-logo">
-                    <img src="https://media.tenor.com/Bs2YHu5ncLYAAAAM/totoro-anime.gif" alt="totoro andando" class="logo">
-            
-                    <h1>スタジオジブリ作品<Br> STUDIO GHIBLI</h1> 
-                </div><!--container-logo--> 
-            </a>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Tela inicial</a></li>
-                        <li><a href="FIlmes.html">Filmes</a></li>
-                        <li><a href="Studio Ghibli Fas.html">Ghibli Fãs</a></li>
-                    </ul>
-                </nav>
+            <h1>
+              スタジオジブリ作品<br />
+              STUDIO GHIBLI
+            </h1>
+          </div>
+          <!--container-logo-->
+        </a>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Tela inicial</a></li>
+              <li><a href="FIlmes.html">Filmes</a></li>
+              <li><a href="Studio Ghibli Fas.html">Ghibli Fãs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <form id="searchForm" action="search.html" method="get">
+            <div class="barra-pesquisa">
+              <input
+                type="text"
+                id="searchInput"
+                name="query"
+                placeholder="Pesquisar..."
+                required
+              />
+              <button type="submit">
+                <img src="./icones/totoro.svg" alt="" />
+              </button>
             </div>
+          </form>
+        </div>
+      </div>
+      <!--container-->
+    </header>
 
-            <div>
-                <form id="searchForm" action="search.html" method="get">
-                    <div class="barra-pesquisa">
-                        <input type="text" id="searchInput" name="query" placeholder="Pesquisar..." required>
-                        <button type="submit"><img src="./icones/totoro.svg" alt=""></button>
-                    </div>
-                </form>
-            </div>    
+    <main>
+      <h1 class="titulo-jogos">Jogos</h1>
+      <div class="galeria">
+        <div class="galeria-jogos-nome">
+          <img src="imagens/jogo 1.webp" alt="Dominion_of_the_Dark_Djinn" />
+          <p>Ni no Kuni: Dominion <br />of the Dark Djinn</p>
+        </div>
+        <div class="galeria-jogos-nome">
+          <img src="imagens/jogo2.4.jpg" alt="Wrath_of_the_White_Witch" />
+          <p>
+            Ni no Kuni Wrath of the <br />
+            White Witch
+          </p>
+        </div>
+        <div class="galeria-jogos-nome">
+          <img src="imagens/jogo3.jfif" alt="Revenant_Kingdom" />
+          <p>Ni no Kuni II: Revenant Kingdom</p>
+        </div>
+        <div class="galeria-jogos-nome">
+          <img src="imagens/jogo2.jfif" alt="ni_no_kuni_remastered" />
+          <p>Ni no Kuni Wrath of the <br />White Witch Remastered</p>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <p>&copy;2024 Todos os direitos reservados</p>
+    </footer>
 
-        </div> <!--container-->
-    </header>    
-    
-<main>   
-    <h1 class="titulo-jogos">Jogos</h1> 
-    <div class="galeria">
-        <div class="galeria-jogos-nome">
-            <img src = "imagens/jogo 1.webp" alt ="Dominion_of_the_Dark_Djinn">
-            <P>Ni no Kuni: Dominion <br>of the Dark Djinn</P>
-        </div>
-        <div class="galeria-jogos-nome">
-            <img src ="imagens/jogo2.4.jpg" alt = "Wrath_of_the_White_Witch"> 
-            <P>Ni no Kuni Wrath of the <br> White Witch</P>
-        </div>
-        <div class="galeria-jogos-nome">
-            <img src = "imagens/jogo3.jfif" alt = "Revenant_Kingdom">
-            <P>Ni no Kuni II: Revenant Kingdom</P>
-        </div>
-        <div class="galeria-jogos-nome">
-            <img src = "imagens/jogo2.jfif" alt="ni_no_kuni_remastered">
-            <P>Ni no Kuni Wrath of the <br>White Witch Remastered</P>
-        </div>
-    </div>   
-</main>
-<hr>
-<footer> 
-    <p>&copy;2024 Todos os direitos reservados</p>
-</footer>
-
-   <!-- Modal -->
-<div id="gameModal" class="modal">
-    <div class="modal-content">
+    <!-- Modal -->
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
         <span class="close">&times;</span>
         <img id="modalImage" src="" alt="Jogo" />
 
-        <div class="texto"><h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p></div>
+        <div class="texto">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
     </div>
-</div>
 
-<script src="Jogos.js"></script>
-
-</body>
+    <script src="./js/Jogos.js"></script>
+  </body>
 </html>
